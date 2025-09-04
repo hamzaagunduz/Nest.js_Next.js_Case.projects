@@ -1,0 +1,6 @@
+{
+    "isDefined": "{property} alanı zorunludur",
+    "isNotEmpty": "{property} alanı boş bırakılamaz",
+    "isString": "{property} metin olmalı",
+    "maxLength": "{property} en fazla {constraints.0} karakter olabilir"
+}

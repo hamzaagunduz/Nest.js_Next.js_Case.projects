@@ -1,0 +1,29 @@
+
+
+response.interceptor kuruldu base response	
+useGlobalPipes I18nValidationPipe kuruldu türkçe
+Jwt refresh kuruldu
+base controller service eklendi
+Tür dönüşümlü sistem ayarlandı
+
+Clonla
+git clone https://github.com/hamzaagunduz/Nest.js_Next.js_Case.project.git
+cd Nest.js_Next.js_Case.project
+
+Bağımlılıkları yükle
+cd api
+npm install
+
+.env dosyası oluştur ve MONGO_URI adresini değiştir
+cat > .env <<EOL
+PORT=3000
+MONGO_URI=mongodb://admin:admin123@localhost:27017/budgetdb?authSource=admin
+JWT_SECRET=superSecretKey123
+JWT_EXPIRATION=3600s
+REFRESH_SECRET=refreshSecret
+REFRESH_EXPIRATION=7d
+JWT_REFRESH_SECRET=refreshSecretKey123
+EOL
+
+cd ../client
+npm install
