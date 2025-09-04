@@ -67,6 +67,27 @@ Client (NextJS): http://localhost:3000 veya terminalde belirtilen port
 
 Artık proje bilgisayarınızda çalışır durumda ve geliştirmeye hazır.
 
+## Proje Özellikleri
+
+### Backend (API)
+- **Swagger entegrasyonu**: API dokümantasyonu `/api` üzerinden görüntülenebilir.
+- **Otomatik validasyon**: `I18nValidationPipe` ile Türkçe hata mesajları ve DTO doğrulamaları sağlandı.
+- **Response interceptor**: `ResponseInterceptor` ile tüm cevaplar standart bir formatta dönüyor (Base Response).
+- **JWT ve Refresh Token**: Kullanıcı kimlik doğrulaması ve token yenileme mekanizması kuruldu.
+- **Base Controller & Service**: Ortak CRUD ve yardımcı işlemler için temel yapılar oluşturuldu.
+- **Tür dönüşümlü sistem**: DTO ve entity arasında dönüşümler otomatik olarak yönetiliyor.
+- **MongoDB kullanımı**: Veri tabanı MongoDB ile çalışıyor.
+- **Modüler yapı**: Her özellik kendi modülü içerisinde yönetiliyor, proje ölçeklenebilir.
+
+### Frontend (Client)
+- **TypeScript kullanımı**: Tüm client uygulaması TypeScript ile yazıldı.
+- **AuthGuard**: Route koruma ve yetkilendirme sistemi eklendi.
+- **Refresh Token yönetimi**: Token yenileme mekanizması uygulandı.
+- **API Client yönetimi**: API çağrıları merkezi bir yapı üzerinden yönetiliyor.
+- **Redux Toolkit**: Global state yönetimi için Redux Toolkit kullanıldı.
+- **Modüler yapı**: Client tarafında da modüler bir yapı ile proje organize edildi.
+
+
 http://localhost:3001/login    Giriş
 http://localhost:3001/register    Kayıt
 http://localhost:3001/    Dashboard  
