@@ -9,12 +9,14 @@ Bu proje, hem **API (NestJS)** hem de **Client (NextJS)** tarafını içerir. A�
 ```bash
 git clone https://github.com/hamzaagunduz/Nest.js_Next.js_Case.projects.git
 cd Nest.js_Next.js_Case.projects
+
 2. API Kurulumu
 2.1 API Bağımlılıklarını Yükle
 bash
 Kodu kopyala
 cd api
 npm install
+
 2.2 API Side .env Dosyasını Oluştur
 bash
 Kodu kopyala
@@ -27,6 +29,7 @@ REFRESH_SECRET=refreshSecret
 REFRESH_EXPIRATION=7d
 JWT_REFRESH_SECRET=refreshSecretKey123
 EOL
+
 MONGO_URI adresini kendi local MongoDB ayarlarınıza göre değiştirin.
 
 2.3 API’yi Çalıştır
@@ -41,6 +44,7 @@ bash
 Kodu kopyala
 cd ../client
 npm install
+
 3.2 Client Side .env.local Dosyasını Oluştur
 bash
 Kodu kopyala
