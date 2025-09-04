@@ -60,7 +60,8 @@ NextJS default port: http://localhost:3000 veya terminalde belirtilen port.
 4. Özet
 API (NestJS): http://localhost:3000
 
-Swagger: http://localhost:3000/api-docs
+
+SwaggerApi: http://localhost:3000/api
 
 Client (NextJS): http://localhost:3000 veya terminalde belirtilen port
 
